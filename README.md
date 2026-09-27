@@ -7,14 +7,15 @@
 | 주차 | 주제 | 문제 | 수정 전 코드 |
 | --- | --- | --- | --- |
 | 2주차 | 자료형과 배열, 메모리와 포인터 | [와이퍼 센서값 변환](weeks/week02/README.md) | [decode_rain.c](weeks/week02/starter/decode_rain.c) |
+| 3주차 | 비트 연산, 레지스터 제어, volatile | [탐사 장치 레지스터 제어](weeks/week03/README.md) | [register_control.c](weeks/week03/starter/register_control.c) |
 
-`week02`는 수업 회차입니다. 달력의 월별 주차나 제출 마감일을 뜻하지 않습니다.
+`week02`, `week03`은 수업 회차입니다. 달력의 월별 주차나 제출 마감일을 뜻하지 않습니다.
 
 ## 과제 풀기
 
 1. 주차별 문제를 읽고 이 저장소를 **Fork**합니다.
 2. 자신의 Fork에서 과제용 브랜치를 만듭니다.
-3. 원본을 `submissions/week02/<자신의 GitHub 아이디>/`로 복사합니다.
+3. 해당 주차의 원본을 `submissions/weekNN/<자신의 GitHub 아이디>/`로 복사합니다. `weekNN`은 `week02`, `week03`처럼 실제 주차로 바꿉니다.
 4. 코드를 고치고 테스트와 원인 분석을 작성합니다.
 5. 이 저장소의 `main`을 대상으로 PR을 보냅니다.
 
@@ -28,11 +29,19 @@ weeks/
     README.md                 # 문제와 요구 조건
     starter/decode_rain.c     # 개선 전 함수 원본
     cases.csv                # 요구 조건 확인용 입력과 예상 결과
+  week03/
+    README.md                 # 레지스터 제어 문제와 선언 문항
+    starter/register_control.c # 개선 전 네 함수
+    cases.csv                # 예상값과 실행값을 직접 기록할 일곱 입력
 submissions/
   week02/<github-id>/         # 학생별 PR로 추가
     decode_rain.c            # 자신의 개선 코드
     tests.c                  # 자신의 테스트
     README.md                # 근본 원인, 설계, 실행 결과
+  week03/<github-id>/
+    register_control.c       # 자신의 개선 코드
+    tests.c                  # 자신의 테스트
+    README.md                # 원인, 결과, 한정자 선언 설명
 templates/
   week/README.md              # 새 주차 문제 작성 양식
   submission/README.md        # 학생 답변 작성 양식
