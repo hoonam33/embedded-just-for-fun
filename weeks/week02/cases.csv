@@ -1,0 +1,14 @@
+case_id,input_hex,input_kind,length,expected_status,expected_rain,expected_command
+zero,00 00,buffer,2,success,0,OFF
+low_byte_128,80 00,buffer,2,success,128,OFF
+low_byte_255,FF 00,buffer,2,success,255,OFF
+threshold_below,F3 01,buffer,2,success,499,OFF
+threshold_at,F4 01,buffer,2,success,500,ON
+range_max,E8 03,buffer,2,success,1000,ON
+range_over,E9 03,buffer,2,failure,,NONE
+high_bit,00 80,buffer,2,failure,,NONE
+max_16bit,FF FF,buffer,2,failure,,NONE
+null_input,,NULL,2,failure,,NONE
+empty_input,,empty,0,failure,,NONE
+short_input,F4,buffer,1,failure,,NONE
+long_input,F4 01 00,buffer,3,failure,,NONE
