@@ -8,8 +8,11 @@
 | --- | --- | --- | --- |
 | 2주차 | 자료형과 배열, 메모리와 포인터 | [와이퍼 센서값 변환](weeks/week02/README.md) | [decode_rain.c](weeks/week02/starter/decode_rain.c) |
 | 3주차 | 비트 연산, 레지스터 제어, volatile | [탐사 장치 레지스터 제어](weeks/week03/README.md) | [register_control.c](weeks/week03/starter/register_control.c) |
+| 4주차 | MCU 구조, Build, 초기화, Git 관리 | [MCU 초기화 기능 구현](weeks/week04/README.md) | [네 Module과 Host test](weeks/week04/starter/) |
 
-`week02`, `week03`은 수업 회차입니다. 달력의 월별 주차나 제출 마감일을 뜻하지 않습니다.
+`week02`, `week03`, `week04`는 수업 회차입니다. 달력의 월별 주차나 제출 마감일을 뜻하지 않습니다.
+
+**4주차를 시작한다면 [4주차 전용 제출 안내](weeks/week04/SUBMISSION.md)를 따라 하세요.** MCU 요구값을 네 `.c` Module에 구현하고, Host test와 Build 단계 확인을 마친 뒤 실제 PR을 제출합니다.
 
 ## 과제 풀기
 
@@ -33,6 +36,12 @@ weeks/
     README.md                 # 레지스터 제어 문제와 선언 문항
     starter/register_control.c # 개선 전 네 함수
     cases.csv                # 예상값과 실행값을 직접 기록할 일곱 입력
+  week04/
+    README.md                 # MCU 초기화 제품 요구사항
+    SUBMISSION.md             # Fork부터 PR까지 4주차 전용 절차
+    PR_BODY.md                # 4주차 PR 작성양식
+    REFERENCES.md             # Datasheet와 고정 공개 예제 링크
+    starter/                  # 네 .c Module, API, Host 대역, tests, Makefile
 submissions/
   week02/<github-id>/         # 학생별 PR로 추가
     decode_rain.c            # 자신의 개선 코드
@@ -42,6 +51,13 @@ submissions/
     register_control.c       # 자신의 개선 코드
     tests.c                  # 자신의 테스트
     README.md                # 원인, 결과, 한정자 선언 설명
+  week04/<github-id>/
+    src/                     # 구현한 Memory·Clock·LED·Application
+    tests/                   # 제공 검증과 본인 추가 test
+    logs/                    # 실제 Host test·Build 단계 실행 결과
+    README.md                # 원인·변경·검증 설명
+    BUILD_ENV.md             # 도구·Source 기준·실행 환경
+    TRACE.md                 # Datasheet·Build·Startup·Module 근거
 templates/
   week/README.md              # 새 주차 문제 작성 양식
   submission/README.md        # 학생 답변 작성 양식
@@ -57,6 +73,7 @@ docs/
 - 풀이 PR은 자기 `submissions` 폴더에 제출합니다. 원본이나 다른 사람의 답안을 덮어쓰지 않습니다.
 - 증상 한 개만 고치는 것으로 끝내지 않고, 문제의 근본 원인을 모두 찾아 설명합니다.
 - 정답 구현을 한 가지로 고정하지 않습니다. 요구 조건을 만족하는지, 선택한 방식의 근거와 단점을 설명하는지 함께 봅니다.
+- API 변경 범위와 필수 도구·테스트는 주차별 문제를 따릅니다. 4주차는 제공된 API와 검증 기준을 유지합니다.
 - 실행 결과에는 실제로 실행한 환경과 결과를 적습니다. 예상값을 실행값으로 표시하지 않습니다.
 - 병합된 제출물과 공개 PR은 다른 사람도 볼 수 있습니다. 독립 풀이가 목적이라면 자신의 첫 답안을 만든 뒤 다른 PR을 참고하세요.
 

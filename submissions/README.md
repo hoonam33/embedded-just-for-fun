@@ -13,6 +13,8 @@ submissions/
 
 `your-github-id`는 실제 자신의 GitHub 아이디로 바꿉니다. 다른 사람과 같은 폴더를 사용하지 않습니다. 추가 헤더나 여러 테스트 파일을 같은 제출 폴더에 둘 수 있습니다.
 
+4주차는 [전용 제출 안내](../weeks/week04/SUBMISSION.md)에 따라 starter 전체를 `submissions/week04/<github-id>/`로 복사합니다. 네 `.c` Module, 추가 test, `README.md`·`BUILD_ENV.md`·`TRACE.md`, 실제 실행 Log를 제출하며 `build/` 산출물은 제외합니다.
+
 문제 원본은 `weeks`에 남습니다. 자신의 폴더 안에서만 코드와 설명을 개선하세요. 같은 과제의 재제출은 기존 PR 브랜치와 폴더를 사용합니다.
 
 공개 저장소이므로 이름·전화번호·개인 이메일 같은 별도 개인정보는 제출 문서에 적지 않아도 됩니다. GitHub 아이디로 구분합니다.
